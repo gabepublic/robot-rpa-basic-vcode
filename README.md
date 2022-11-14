@@ -64,10 +64,23 @@ The Robocorp extension for Visual Studio Code enables:
 
 - The `task.robot` file has been completed
 
-- Checkout the "code completion", "Robot Framework Interactive Console",
+- Also CHECKOUT: "code completion", "Robot Framework Interactive Console",
 
 
 ## RUN the robot locally
+
+- We will use the Robocorp extension to run the robot. The extension
+  is configured with the `robot.yaml` file. With the current 
+  configuration, the extension will run the `task.robot` file.
+```
+[...]
+tasks:
+  Run all tasks:
+    shell: python -m robot --report NONE --outputdir output --logtitle "Task log" task.robot
+[...]
+```
+  NOTE: replacing the above `task.robot` with `*.robot` will run all
+  the robots.
 
 - Run the robot locally using the Robocorp extension
   - From the top menu, select: View > Command Pallete, and enter "Robocorp"
