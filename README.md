@@ -17,6 +17,7 @@ The Robocorp extension for Visual Studio Code enables:
   visual inspector; [Locating and targeting user interface elements in Visual Studio Code](https://robocorp.com/docs/developer-tools/visual-studio-code/locating-and-targeting-UI-elements)
 - other powerful features.
 
+
 ## SETUP
 
 - Install Visual Studio Code (vcode)
@@ -28,6 +29,7 @@ The Robocorp extension for Visual Studio Code enables:
   - From the top menu, select: File > Preferences > Settings
   - Search for "Format on Save" setting
   - If not already, check "Format a file on save"
+
 
 ## CREATE A NEW ROBOT PROJECT
 
@@ -48,6 +50,9 @@ The Robocorp extension for Visual Studio Code enables:
 - The `output` folder will contain the generated artifacts after 
   running the robot task(s) 
 
+
+## CREATE Robot Task
+
 - The `task.robot` file specifies the instructions for the robot;
   in this tutorial, it will be very simple steps:
   - Open a browser
@@ -57,6 +62,7 @@ The Robocorp extension for Visual Studio Code enables:
 - The `task.robot` file has been completed
 
 - Checkout the "code completion"
+
 
 ## RUN the robot locally
 
@@ -71,6 +77,7 @@ The Robocorp extension for Visual Studio Code enables:
   - Open the `log.html` file using a browser
 
 - The screenshot `png` image file can be found on the root folder   
+
 
 ## RUN the robot in the Robocorp cloud Control Room
 
