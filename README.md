@@ -26,6 +26,7 @@ The Robocorp extension for Visual Studio Code enables:
 
 - Then, install vcode extensions: `Robocorp Code`, and 
   `Robot Framework Language Server`
+  - For details, [Visual Studio Code](https://robocorp.com/docs/developer-tools/visual-studio-code/overview)
 
 - Customize vcode for 
   - From the top menu, select: File > Preferences > Settings
