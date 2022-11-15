@@ -71,21 +71,27 @@ The Robocorp extension for Visual Studio Code enables:
 ## RUN the robot locally
 
 - We will use the Robocorp extension to run the robot. The extension
-  is configured with the `robot.yaml` file. With the current 
-  configuration, the extension will run the `task.robot` file.
+  is configured with the `robot.yaml` file. There are two tasks defined
+  in the `robot.yaml` file as shown below. The difference is in the 
+  robot task file, `*.robot` vs `tasks.robot`. The former will execute
+  all the `.robot` files, versus only the `tasks.robot` file for the 
+  latter. The purpose is to demonstrate the ability to define multiple
+  tasks in the `robot.yaml` file, and when calling the 
+  "Robocorp: Run Robot" below, there is an extra step to choose the task.
 ```
-[...]
 tasks:
   Run all tasks:
-    shell: python -m robot --report NONE --outputdir output --logtitle "Task log" task.robot
+    shell: python -m robot --report NONE --outputdir output --logtitle "All Task log" *.robot
+
+  Run a single task:
+    shell: python -m robot --report NONE --outputdir output --logtitle "Single Task log" tasks.robot
 [...]
-```
-  NOTE: replacing the above `task.robot` with `*.robot` will run all
-  the robots.
+```  
 
 - Run the robot locally using the Robocorp extension
   - From the top menu, select: View > Command Pallete, and enter "Robocorp"
   - From the list, select "Robocorp: Run Robot"
+  - From the task list, select a task.
 
 - When the robot runs, the vcode debug console will show the messages
 ```
